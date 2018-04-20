@@ -5,6 +5,9 @@ services:
     image: graalvm
     build:
       context: ./
+      args:
+      - http_proxy
+      - https_proxy
     tty: true
     volumes:
       - ./:/app
