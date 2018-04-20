@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  graalvm:
+    image: graalvm
+    build:
+      context: ./
+    tty: true
+    volumes:
+      - ./:/app
